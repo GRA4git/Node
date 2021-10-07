@@ -1,8 +1,7 @@
-const { log } = require('console');
-const express = require('express');
-const { start } = require('repl');
+
+const express = require('express')
 const app = express()
-const port = 3001
+const port = 4000
 
 app.get('/contacts', (req, res) => {
     res.json({
@@ -12,6 +11,6 @@ app.get('/contacts', (req, res) => {
     })
   })
 
-  app.listen(port,() => {
-      console.log('hhhhh');
-  })
+app.listen(port, () => {
+  console.log('hkdjhgkdghk')
+})
