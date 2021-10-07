@@ -1,6 +1,12 @@
-// СоздСоздай новый проект Node.js командой npm init -y.
+const express = require('express')
+const app = express()
+const port = 3000
 
-// Установи в зависимости библиотеку Express командой npm i express.
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
-// Установи Prettier в зависимости разработчика командой npm i -D prettier.
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
 
