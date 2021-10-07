@@ -8,10 +8,10 @@ app.get('/',(req, res) => {
 app.get('/users',(req, res) => {
     res.send(["user1", "user2", "user3"])  
 })
-app.post('/',(req, res) => {
+app.post('/users',(req, res) => {
     res.send('юзер добавлен')  
 })
-app.post('/',(req, res) => {
+app.get('/admin',(req, res) => {
     res.send('не хватает прав доступа')  
 })
 
